@@ -6,10 +6,17 @@
 
 Early-warning web app for small aquaculture farmers in coastal Karnataka.
 It predicts pond water-quality risk (**Safe / Warning / Danger**) and shows alerts in Kannada and English.
-Software only: sensor readings are simulated from public datasets.
+Today the app is software only: demo readings are simulated from public datasets and clearly labelled.
 Farmers can add their own ponds (no account: a random farm code groups them) and connect one sensor (e.g. an ESP32) to each, to see live readings from all of them: see [docs/sensor-api.md](docs/sensor-api.md).
 
-Built for DevHack 2026, problem statement 1.1.
+## Status
+
+| When | What |
+|---|---|
+| Sept–Oct 2026 | Web app built and deployed for DevHack 2026 (problem statement 1.1) |
+| Oct 2026 | Design refresh, `/healthz` keep-alive, demo video |
+| Nov 2026 | Hardware plan for a low-cost sensor buoy and an offline night siren: [hardware/README.md](hardware/README.md) |
+| 27–28 Nov 2026 | Resurrect 2026 finale (VCET Puttur): building the sensor buoy and night siren. Everything in `hardware/` with a commit date in that window was built there |
 
 ## Project layout
 
@@ -49,7 +56,7 @@ Built for DevHack 2026, problem statement 1.1.
 | `docs/health_score.md` | How the 0–100 health score is worked out, with examples |
 | `docs/time_to_danger.md` | "Time until danger" method and results on real + simulated data |
 | `docs/screenshots/` | App screenshots (simulated demo) |
-| `frontend/` | The web page: `index.html`, dashboard (`styles.css`, `app.js`), welcome screen (`welcome.css`, `welcome.js`), flat pond view (`pond-view.js`). Calm, flat design: hairline borders, no decorative glows or shadows, colour only for the brand and Safe / Warning / Danger, and motion only where it means something (a level change, a number moving, the countdown, a Danger alert). Dark and light themes (one Realtime Colors palette: indigo, pond blue, cyan; toggle in the top bar). Add `?debug` to the address to see live counts |
+| `frontend/` | The web page: `index.html`, dashboard (`styles.css`, `app.js`), welcome screen (`welcome.css`, `welcome.js`), flat pond view (`pond-view.js`). Calm, flat design: hairline borders, no decorative glows or shadows, colour only for the brand and Safe / Warning / Danger, and motion only where it means something (a level change, a number moving, the countdown, a Danger alert). Light theme in soft grey-green with a teal accent, dark theme in black and white (toggle in the top bar). Add `?debug` to the address to see live counts |
 | `frontend/assistant.js` | "Ask AquaNexus" chat card (suggested questions, speaker button per reply) |
 | `frontend/diseases.js` | Fish disease guide card: symptom checker, disease library with original SVG fish drawings |
 | `frontend/health-ring.js`, `history.js`, `voice.js` | Health score ring, alert history (saved in the browser), voice alerts (phone's own voices, only when tapped) |
@@ -61,6 +68,7 @@ Built for DevHack 2026, problem statement 1.1.
 | `render.yaml`, `docs/deploy.md` | Free online deployment on Render, with step-by-step setup and its limits |
 | `frontend/fonts/` | Noto Sans + Noto Sans Kannada, bundled so the app works on cheap phones and slow internet |
 | `.claude/skills/` | Shared Claude Code skills for the team |
+| `hardware/` | Plan for the ESP32 sensor buoy and LoRa night siren (parts, pin map, build order). Firmware will be added at the Resurrect 2026 finale |
 | `data/` | Datasets. **Not in git**: download them yourself (steps below) |
 
 ## Setup
