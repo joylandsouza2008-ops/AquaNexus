@@ -6,7 +6,8 @@ Predicts pond water-quality risk (Safe / Warning / Danger) and shows alerts in K
 - Backend: Python, FastAPI, scikit-learn
 - Frontend: HTML, Tailwind, JavaScript, GSAP/Lottie animations, Chart.js
 - Data: Aquaculture Water Dataset (Mendeley), Pondsdata (Kaggle)
-- Software only, no hardware. Sensor data is simulated from datasets.
+- Web app is software only; demo sensor data is simulated from datasets.
+- Hardware (ESP32 sensor buoy, LoRa night siren) is planned in hardware/README.md and gets built at the Resurrect 2026 finale.
 
 ## Rules
 - I'm a beginner in Python; explain what each file does.
