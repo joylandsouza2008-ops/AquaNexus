@@ -1,4 +1,4 @@
-# AquaNexus — DevHack 2026, PS 1.1
+# AquaNexus
 Early-warning web app for small aquaculture farmers in coastal Karnataka.
 Predicts pond water-quality risk (Safe / Warning / Danger) and shows alerts in Kannada + English.
 

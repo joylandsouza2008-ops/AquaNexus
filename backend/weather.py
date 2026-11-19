@@ -36,7 +36,7 @@ OPEN_METEO_URL = "https://api.open-meteo.com/v1/forecast"
 TIMEZONE = "Asia/Kolkata"
 IST = timezone(timedelta(hours=5, minutes=30))     # India has no daylight saving, so a fixed +05:30 is exact
 # Some services refuse Python's default "Python-urllib" name, so say who we are.
-USER_AGENT = "MeenuRaksha/1.0 (fish-pond early warning; github.com/joylandsouza2008-ops/DevHack)"
+USER_AGENT = "MeenuRaksha/1.0 (fish-pond early warning; github.com/joylandsouza2008-ops/AquaNexus)"
 CACHE_FILE = Path(__file__).resolve().parent.parent / "data" / "weather_cache.json"
 REFRESH_MINUTES = 30        # reuse a forecast younger than this instead of downloading again
 TIMEOUT_SECONDS = 8         # give up quickly with no internet; the saved forecast is used instead

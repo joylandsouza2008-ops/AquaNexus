@@ -41,13 +41,13 @@ Source: [Render docs: Deploy for Free](https://render.com/docs/free) (checked 4 
 1. **Push the code.** Make sure the latest code is on GitHub (`git push`). Render reads it from there.
 2. **Create a Render account.**
    - Go to https://render.com and click **Get Started**.
-   - Choose **Sign up with GitHub** and allow access. The GitHub account must be the one that owns the `DevHack` repository.
+   - Choose **Sign up with GitHub** and allow access. The GitHub account must be the one that owns the `AquaNexus` repository.
 3. **Give Render access to the repository.**
-   - When Render asks which repositories it may see, choose **Only select repositories** and pick **DevHack**.
+   - When Render asks which repositories it may see, choose **Only select repositories** and pick **AquaNexus**.
    - If you skipped this, go to Render **Account Settings → GitHub → Configure**.
 4. **Create the app from the blueprint.**
    - In the Render dashboard click **New + → Blueprint**.
-   - Pick the **DevHack** repository and the `main` branch.
+   - Pick the **AquaNexus** repository and the `main` branch.
    - Render finds `render.yaml` and shows one web service called **meenuraksha** on the **Free** plan.
    - Click **Apply** (or **Deploy Blueprint**).
    - Check that the plan says **Free**. If Render asks for a card anyway, the free plan still costs nothing, but check with whoever owns the card first.

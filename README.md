@@ -13,7 +13,7 @@ Farmers can add their own ponds (no account: a random farm code groups them) and
 
 | When | What |
 |---|---|
-| Sept–Oct 2026 | Web app built and deployed for DevHack 2026 (problem statement 1.1) |
+| Sept–Oct 2026 | Web app built and deployed (first version) |
 | Oct 2026 | Design refresh, `/healthz` keep-alive, demo video |
 | Nov 2026 | Hardware plan for a low-cost sensor buoy and an offline night siren: [hardware/README.md](hardware/README.md) |
 | 27–28 Nov 2026 | Resurrect 2026 finale (VCET Puttur): building the sensor buoy and night siren. Everything in `hardware/` with a commit date in that window was built there |
@@ -74,8 +74,8 @@ Farmers can add their own ponds (no account: a random farm code groups them) and
 ## Setup
 
 ```bash
-git clone https://github.com/joylandsouza2008-ops/DevHack.git
-cd DevHack
+git clone https://github.com/joylandsouza2008-ops/AquaNexus.git
+cd AquaNexus
 
 # Create a Python virtual environment (a private package folder for this project)
 python -m venv .venv
